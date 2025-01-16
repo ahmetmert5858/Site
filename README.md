@@ -1,2 +1,2 @@
 # Site
- Sanayi Sitesi puanlama 
+ Sanayi Dükkanı puanlama 
