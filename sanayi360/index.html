@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Üye Ol ve Giriş Yap</title>
+    <!-- CSS Bağlantısı -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-structor">
+        <!-- Üye Olma Formu -->
+        <div class="signup">
+            <h2 class="form-title" id="signup"><span>ya da</span>Üye Ol</h2>
+            <form action="kayıt.php" method="post">
+                <div class="form-holder">
+                    <!-- 'ad_soyad' yerine 'kullanici_adi' olarak değiştirildi -->
+                    <input type="text" class="input" name="kullanici_adi" placeholder="Kullanıcı Adı" required />
+                    <input type="password" class="input" name="sifre" placeholder="Şifre" required />
+                </div>
+                <button type="submit" class="submit-btn">Üye Ol</button>
+            </form>
+        </div>
+        
+        <!-- Giriş Yapma Formu -->
+        <div class="login slide-up">
+            <div class="center">
+                <h2 class="form-title" id="login"><span>ya da</span>Giriş Yap</h2>
+                <form action="giris.php" method="post">
+                    <div class="form-holder">
+                        <input type="text" class="input" name="username" placeholder="Kullanıcı Adı" required />
+                        <input type="password" class="input" name="sifre" placeholder="Şifre" required />
+                    </div>
+                    <button type="submit" class="submit-btn">Giriş Yap</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- JS Bağlantısı -->
+    <script src="script.js"></script>
+</body>
+</html>
